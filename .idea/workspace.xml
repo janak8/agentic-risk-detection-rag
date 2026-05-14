@@ -5,15 +5,156 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d532b9ba-6146-473d-b862-b9b4c9db045b" name="Changes" comment="Added MLflow tracking and model registry">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/scaler.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/scaler.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/fraud_scene.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/texts/0724a7f71aa85c81.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/texts/866bd65e3b9e306f.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/texts/8b92f3fdd40a379e.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/texts/9749659a9e1c7687.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/FraudDetectionScene.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/PathfindingScene.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1572132086_2720393382.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1645484545_2806494052.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1734327179_2894425636.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1743739266_300990856.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1830059818_976386099.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1839128356_1799972125.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1839128356_1842088120.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_1839128356_3662892385.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_2408024828_4132494926.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_2408024828_455162499.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_2581399108_2278689724.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_2664879173_2667525974.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_2710546206_1336698457.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_2973421114_3641561882.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3201849554_1892849193.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3201849554_2753260057.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3201849554_2853152098.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3201849554_2927100654.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3201849554_3343708025.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3201849554_441457669.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3201849554_631829896.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3354696416_887843241.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3809480117_3615867264.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_3966287375_1478739984.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_4014295662_1896099861.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_4045900042_308583181.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_4051563541_2758121787.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_780736731_4117996505.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2135761390_961624973_1485812557.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2257293077_1881434206_223132457.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/2257293077_2884544716_223132457.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/FraudDetectionScene/partial_movie_file_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1020845577_3493700190.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1115742581_2466887891.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_113713537_750829411.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1139577937_1268751684.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1202425493_3345460347.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1206802833_2690783520.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1219690205_3632528818.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1241906849_3055205630.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1299235797_1946599011.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_145238282_1624047643.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1475533301_796068223.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1506093889_3752462486.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1603939893_3226406668.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1801440029_3228707105.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_187927130_1383606048.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1880752425_446710191.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_191944227_1466015581.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1949573106_3267542853.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_1984234589_2930102833.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2070460606_751773138.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2075613481_2472070679.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2133700360_2642837856.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2154189274_2951920565.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2156887566_3174598848.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2197752025_3854479837.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2215176272_3263969511.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_230004758_588029976.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_236850112_4254835989.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2374214605_2807688182.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2420049594_2388632167.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2450347555_1346970753.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2501142874_779959306.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2587661931_657960226.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2600163433_877150359.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2624464015_3912871282.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2714864754_3277872260.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2752345912_2476430398.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2811136262_3140134087.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2847505330_1520295497.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2871846378_3429448455.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2874265716_715349590.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2916598328_2751405160.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2936763622_3354353260.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_2987761234_3487354933.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3014926311_1317786550.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3016168991_1619282219.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3111713606_2623202710.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3128828418_162622067.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3173938650_4044221618.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3201849554_1747053203.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3201849554_631829896.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3263719181_41210539.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3299650423_2120798342.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3302449785_2078410101.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3359933356_2582286080.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3456359350_949430900.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3457910488_787498706.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3500231743_1000212284.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_352842849_960326196.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3581785973_4001687702.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3606989131_343619685.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3659599929_1073799571.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3660854620_2426080900.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3673028205_3933387877.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3674923664_1114352088.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3684028896_3811305623.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3780101879_1614940926.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3831802135_1910783726.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3882951417_797493336.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3935959755_3244549736.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_3947648550_3502907987.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_40160683_1566528634.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_4024063327_2790254942.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_4068229245_905905054.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_4132274725_631923024.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_4139479410_29965952.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_4173707347_2306308975.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_41826179_1049407035.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_4236338820_938085550.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_4246791985_3662731617.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_48840538_2166590764.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_610972286_2795055281.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_62981265_3905008763.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_646060472_466833512.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_64622670_3811305623.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_809199099_1033567763.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_821301288_3121743048.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_829861437_1434814268.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_848358107_3366902821.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_859988630_808865637.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_878559709_4074516215.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_88032631_2240030629.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_891119586_3789612329.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_927282341_23790093.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2135761390_9970933_3797960948.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/2257293077_1398629444_2358810818.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manim/media/videos/fraud_scene/1080p60/partial_movie_files/PathfindingScene/partial_movie_file_list.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modeling/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="4" />
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Downloads" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,18 +167,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "janak8"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;janak8&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/janak8/risk-decision-system.git",
-    "accountId": "2d8952d4-a0ae-4c12-8be9-994621fecf1d"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/janak8/risk-decision-system.git&quot;,
+    &quot;accountId&quot;: &quot;2d8952d4-a0ae-4c12-8be9-994621fecf1d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -49,43 +190,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.FraudRender.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.business_logic.executor": "Run",
-    "Python.data_generator.executor": "Run",
-    "Python.data_loader.executor": "Run",
-    "Python.data_loader2.executor": "Run",
-    "Python.data_simulation.executor": "Run",
-    "Python.forecast.executor": "Run",
-    "Python.fraud_scene.executor": "Run",
-    "Python.load_model_mlflow.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main2.executor": "Run",
-    "Python.model_training.executor": "Run",
-    "Python.perfect_pipeline.executor": "Run",
-    "Python.predict.executor": "Run",
-    "Python.predictor.executor": "Run",
-    "Python.scoring.executor": "Run",
-    "Python.simulate.executor": "Run",
-    "Python.train.executor": "Run",
-    "Python.train_mlflow.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/risk_decision_system/modeling",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.FraudRender.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.business_logic.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_loader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_loader2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_simulation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.forecast.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fraud_scene.executor&quot;: &quot;Run&quot;,
+    &quot;Python.load_model_mlflow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_training.executor&quot;: &quot;Run&quot;,
+    &quot;Python.perfect_pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predictor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.prefect_pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scoring.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simulate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_mlflow.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/PycharmProjects/risk_decision_system/modeling&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\PycharmProjects\risk_decision_system\modeling" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\risk_decision_system/pipeline" />
       <recent name="C:\Users\User\PycharmProjects\risk_decision_system" />
       <recent name="C:\Users\User\PycharmProjects\adaptive_inventory_project" />
       <recent name="C:\Users\User\PycharmProjects\adaptive_inventory_project\.venv" />
@@ -156,6 +300,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added MLflow tracking and model registry" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MLflow tracking and model registry" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
