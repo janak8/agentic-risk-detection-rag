@@ -260,10 +260,6 @@ mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
 
 ## Future Improvements
 
-- [ ] Switch LLM to Groq API for cloud deployment
-- [ ] AWS deployment (ECS + ECR)
-- [ ] SHAP explainability
-- [ ] JWT authentication
 - [ ] Switch to XGBoost or ensemble model
 
 ---
