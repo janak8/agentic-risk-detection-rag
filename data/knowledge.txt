@@ -1,0 +1,30 @@
+Loan Risk Assessment Guidelines
+
+A loan application is considered LOW RISK when:
+- Credit score is above 650
+- Debt-to-income ratio is below 0.4
+- The applicant has been employed for more than 2 years
+- Loan amount is less than 3x annual income
+- Age is between 25 and 60
+- No previous loan defaults
+
+A loan application is considered HIGH RISK when:
+- Credit score is below 550
+- Debt-to-income ratio is above 0.5
+- The applicant has been employed for less than 1 year
+- Loan amount exceeds 5x annual income
+- History of missed payments or defaults
+- Income is unstable or unverified
+
+Borderline cases (MEDIUM RISK):
+- Credit score between 550 and 650
+- Debt-to-income ratio between 0.4 and 0.5
+- Employment between 1 and 2 years
+- These cases require manual review
+
+Key factors in loan decision:
+1. Credit Score - most important factor
+2. Debt-to-Income Ratio - measures repayment capacity
+3. Employment History - measures income stability
+4. Loan Amount vs Income - measures affordability
+5. Age - measures earning potential

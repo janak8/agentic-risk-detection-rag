@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic Risk Detection RAG System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; }
+        header { background: linear-gradient(135deg, #1e3a5f, #0f172a); padding: 30px; text-align: center; border-bottom: 1px solid #334155; }
+        header h1 { font-size: 2rem; color: #38bdf8; margin-bottom: 8px; }
+        header p { color: #94a3b8; font-size: 1rem; }
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .card { background: #1e293b; border-radius: 12px; padding: 30px; margin-bottom: 30px; border: 1px solid #334155; }
+        .card h2 { color: #38bdf8; margin-bottom: 20px; font-size: 1.3rem; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        label { display: block; margin-bottom: 5px; color: #94a3b8; font-size: 0.85rem; }
+        input, textarea { width: 100%; padding: 10px 14px; background: #0f172a; border: 1px solid #334155; border-radius: 8px; color: #e2e8f0; font-size: 0.95rem; }
+        input:focus, textarea:focus { outline: none; border-color: #38bdf8; }
+        button { margin-top: 20px; width: 100%; padding: 12px; background: #38bdf8; color: #0f172a; border: none; border-radius: 8px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+        button:hover { background: #7dd3fc; }
+        .result { margin-top: 20px; padding: 20px; background: #0f172a; border-radius: 8px; border: 1px solid #334155; display: none; }
+        .result.show { display: block; }
+        .approved { color: #4ade80; font-weight: bold; }
+        .rejected { color: #f87171; font-weight: bold; }
+        .badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-bottom: 10px; }
+        .badge.approved { background: #14532d; color: #4ade80; }
+        .badge.rejected { background: #450a0a; color: #f87171; }
+        .loading { color: #94a3b8; font-style: italic; }
+        textarea { resize: vertical; min-height: 80px; }
+        .answer-text { color: #e2e8f0; line-height: 1.7; white-space: pre-wrap; }
+        .prob { color: #94a3b8; font-size: 0.9rem; margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🏦 Agentic Risk Detection RAG System</h1>
+    <p>ML-powered loan risk prediction with multi-agent AI reasoning</p>
+</header>
+
+<div class="container">
+
+    <!-- ML Prediction -->
+    <div class="card">
+        <h2>⚡ ML Risk Prediction</h2>
+        <p style="color:#94a3b8; margin-bottom:20px; font-size:0.9rem;">Instant prediction using trained Logistic Regression model</p>
+        <div class="grid">
+            <div>
+                <label>Age</label>
+                <input type="number" id="age" placeholder="35" value="35">
+            </div>
+            <div>
+                <label>Annual Income ($)</label>
+                <input type="number" id="income" placeholder="60000" value="60000">
+            </div>
+            <div>
+                <label>Loan Amount ($)</label>
+                <input type="number" id="loan_amount" placeholder="15000" value="15000">
+            </div>
+            <div>
+                <label>Credit Score</label>
+                <input type="number" id="credit_score" placeholder="650" value="650">
+            </div>
+            <div>
+                <label>Years Employed</label>
+                <input type="number" id="years_employed" placeholder="5" value="5">
+            </div>
+            <div>
+                <label>Debt-to-Income Ratio</label>
+                <input type="number" id="debt_to_income" placeholder="0.3" step="0.01" value="0.3">
+            </div>
+        </div>
+        <button onclick="predict()">🔍 Predict Risk</button>
+        <div class="result" id="predict-result"></div>
+    </div>
+
+    <!-- Agent Evaluation -->
+    <div class="card">
+        <h2>🤖 AI Agent Evaluation</h2>
+        <p style="color:#94a3b8; margin-bottom:20px; font-size:0.9rem;">Multi-agent RAG system: Retrieval → Reasoning → Decision</p>
+        <div class="grid">
+            <div>
+                <label>Age</label>
+                <input type="number" id="a-age" placeholder="35" value="35">
+            </div>
+            <div>
+                <label>Annual Income ($)</label>
+                <input type="number" id="a-income" placeholder="60000" value="60000">
+            </div>
+            <div>
+                <label>Loan Amount ($)</label>
+                <input type="number" id="a-loan" placeholder="15000" value="15000">
+            </div>
+            <div>
+                <label>Credit Score</label>
+                <input type="number" id="a-credit" placeholder="650" value="650">
+            </div>
+            <div>
+                <label>Years Employed</label>
+                <input type="number" id="a-years" placeholder="5" value="5">
+            </div>
+            <div>
+                <label>Debt-to-Income Ratio</label>
+                <input type="number" id="a-dti" placeholder="0.3" step="0.01" value="0.3">
+            </div>
+        </div>
+        <button onclick="evaluateLoan()">🧠 Agent Evaluate</button>
+        <div class="result" id="evaluate-result"></div>
+    </div>
+
+    <!-- Ask Agent -->
+    <div class="card">
+        <h2>💬 Ask the AI Agent</h2>
+        <p style="color:#94a3b8; margin-bottom:20px; font-size:0.9rem;">Ask anything about loan criteria and risk assessment</p>
+        <label>Your Question</label>
+        <textarea id="question" placeholder="What is the criteria for getting a loan approved?"></textarea>
+        <button onclick="ask()">💬 Ask Agent</button>
+        <div class="result" id="ask-result"></div>
+    </div>
+
+</div>
+
+<script>
+async function predict() {
+    const result = document.getElementById('predict-result');
+    result.className = 'result show';
+    result.innerHTML = '<p class="loading">Predicting...</p>';
+
+    const res = await fetch('/predict', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            age: +document.getElementById('age').value,
+            income: +document.getElementById('income').value,
+            loan_amount: +document.getElementById('loan_amount').value,
+            credit_score: +document.getElementById('credit_score').value,
+            years_employed: +document.getElementById('years_employed').value,
+            debt_to_income: +document.getElementById('debt_to_income').value
+        })
+    });
+
+    const data = await res.json();
+    const approved = data.loan_status === 'APPROVED';
+    result.innerHTML = `
+        <span class="badge ${approved ? 'approved' : 'rejected'}">${data.loan_status}</span>
+        <p class="prob">Risk Level: <strong>${data.risk_level}</strong></p>
+        <p class="prob">Default Probability: <strong>${(data.default_probability * 100).toFixed(1)}%</strong></p>
+    `;
+}
+
+async function evaluateLoan() {
+    const result = document.getElementById('evaluate-result');
+    result.className = 'result show';
+    result.innerHTML = '<p class="loading">AI Agents thinking...</p>';
+
+    const res = await fetch('/evaluate', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            age: +document.getElementById('a-age').value,
+            income: +document.getElementById('a-income').value,
+            loan_amount: +document.getElementById('a-loan').value,
+            credit_score: +document.getElementById('a-credit').value,
+            years_employed: +document.getElementById('a-years').value,
+            debt_to_income: +document.getElementById('a-dti').value
+        })
+    });
+
+    const data = await res.json();
+    result.innerHTML = `<p class="answer-text">${data.decision}</p>`;
+}
+
+async function ask() {
+    const result = document.getElementById('ask-result');
+    result.className = 'result show';
+    result.innerHTML = '<p class="loading">Agent retrieving and reasoning...</p>';
+
+    const res = await fetch('/ask', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({question: document.getElementById('question').value})
+    });
+
+    const data = await res.json();
+    result.innerHTML = `<p class="answer-text">${data.answer}</p>`;
+}
+</script>
+
+</body>
+</html>

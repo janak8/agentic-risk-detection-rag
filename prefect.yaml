@@ -1,0 +1,43 @@
+---
+# Welcome to your prefect.yaml file! You can use this file for
+# storing and managing configuration for deploying your flows.
+# We recommend committing this file to source control along
+# with your flow code.
+
+# Generic metadata about this project
+name: risk_decision_system
+prefect-version: 3.6.28
+
+# build section allows you to manage and build docker images
+build: null
+
+# push section allows you to manage if and how this project
+# is uploaded to remote locations
+push: null
+
+# pull section allows you to provide instructions for cloning
+# this project in remote locations
+pull:
+- prefect.deployments.steps.git_clone:
+    repository: https://github.com/janak8/risk-decision-system.git
+    branch: main
+
+# the deployments section allows you to provide configuration
+# for deploying flows
+deployments:
+- name: risk-training-deployment
+  version: null
+  tags: []
+  concurrency_limit: null
+  description: null
+  entrypoint: prefect_pipeline.py:training_pipeline
+  parameters: {}
+  work_pool:
+    name: ml-pool
+    work_queue_name: null
+    job_variables: {}
+  schedules:
+  - cron: 0 0 * * *
+    timezone: Europe/London
+    day_or: true
+    active: true

@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/User/PycharmProjects/risk_decision_system/mlruns/1/models/m-ba1a42e5a9a244f984c7fdafa129d8e6/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-ba1a42e5a9a244f984c7fdafa129d8e6
+model_size_bytes: 911
+model_uuid: m-ba1a42e5a9a244f984c7fdafa129d8e6
+prompts: null
+run_id: e547cbd355ad48a496e87a0aae708f4f
+utc_time_created: '2026-05-17 08:57:26.916913'
