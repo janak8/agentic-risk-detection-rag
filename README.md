@@ -217,6 +217,14 @@ Question/Application
 │  Decision Agent   │ → gives final APPROVE/REJECT verdict
 └───────────────────┘
 ```
+---
+
+## UI Preview
+
+<img width="1270" height="524" alt="Image" src="https://github.com/user-attachments/assets/5290e097-4eac-432c-be94-bc46dbbb32e8" />
+<img width="1256" height="467" alt="Image" src="https://github.com/user-attachments/assets/493b1f84-f8e3-4b15-91be-0a1657de9da9" />
+<img width="1269" height="583" alt="Image" src="https://github.com/user-attachments/assets/1cf04b31-6ace-4ab4-a5d6-86b583dad93c" />
+---
 
 ---
 
@@ -234,6 +242,19 @@ Every Prefect run automatically:
 python pipeline/prefect_pipeline.py
 mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
 ```
+## MLOps Preview
+
+<img width="1280" height="581" alt="Image" src="https://github.com/user-attachments/assets/783b992b-9263-4f13-890d-3288c7f588b5" />
+<img width="1279" height="593" alt="Image" src="https://github.com/user-attachments/assets/fef15582-30b7-445c-af42-da5194fcd348" />
+<img width="1280" height="593" alt="Image" src="https://github.com/user-attachments/assets/2b8c630b-6edf-4e60-9225-7cf7102d1140" />
+<img width="1278" height="591" alt="Image" src="https://github.com/user-attachments/assets/8e1ff4ba-8ade-4d61-826d-66b5dbd60cda" />
+<img width="824" height="221" alt="Image" src="https://github.com/user-attachments/assets/09abf87f-e76e-40ff-9e6e-106cf18d2b8b" />
+<img width="1274" height="580" alt="Image" src="https://github.com/user-attachments/assets/c538897f-dc8c-48d1-a3de-9bc8b518594d" />
+<img width="1268" height="588" alt="Image" src="https://github.com/user-attachments/assets/fb09030c-9229-4adf-8858-27c17135a23f" />
+<img width="1278" height="597" alt="Image" src="https://github.com/user-attachments/assets/1e7051e5-2290-4f11-a55f-7d8999581213" />
+<img width="1238" height="242" alt="Image" src="https://github.com/user-attachments/assets/54fa6433-1a8d-4a0a-9e34-fddc0eed9124" />
+<img width="662" height="214" alt="Image" src="https://github.com/user-attachments/assets/bc757bb4-19f3-4442-9f5e-8e34903d0ac1" />
+---
 
 ---
 
