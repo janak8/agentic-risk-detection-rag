@@ -1,5 +1,5 @@
 from typing import TypedDict
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain_community.vectorstores import FAISS
 from langgraph.graph import StateGraph, END
 from langchain_groq import ChatGroq
@@ -13,7 +13,7 @@ llm = ChatGroq(
     api_key=os.environ.get("GROQ_API_KEY")
 )
 
-embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+embedding_model = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 vectorstore = FAISS.load_local(
     "faiss_index",
     embedding_model,
