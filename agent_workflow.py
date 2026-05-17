@@ -2,9 +2,16 @@ from typing import TypedDict
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langgraph.graph import StateGraph, END
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-llm = ChatOllama(model="llama3.2", temperature=0.1)
+llm = ChatGroq(
+    model="llama-3.3-70b-versatile",
+    temperature=0.1,
+    api_key=os.environ.get("GROQ_API_KEY")
+)
 
 embedding_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 vectorstore = FAISS.load_local(
